@@ -16,7 +16,7 @@ const ciudades = [];
 const ciudad = "";
 
 do {
-    const ciudad = prompt('Ingrese una ciudad');
+    const ciudad = prompt('Ingrese Nombres de Ciudades: ');
 
     if (ciudad) {
         ciudades.push(ciudad);
@@ -27,3 +27,5 @@ do {
 document.writeln(`<h3>la logitud del array es: ${ciudades.length}</h3>`);
 document.writeln(`<p>El elemento en PRIMERA posicion del item es: ${ciudades[0]}</p><br>`);
 document.writeln(`<p>El elemento en TERCERA posicion del item es: ${ciudades[2]}</p><br>`);
+let ultimoElemento = ciudades[ciudades.length - 1];
+document.writeln(`<p>El elemento en ULTIMA posicion del item ${ultimoElemento}</p><br>`);
