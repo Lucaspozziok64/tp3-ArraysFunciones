@@ -25,11 +25,11 @@ do {
 } while (confirm('Desea agregar otra ciudad?'));
 
 document.writeln(`<h3>la logitud del array es: ${ciudades.length}</h3>`);
-document.writeln(`<p>El elemento en PRIMERA posicion del array es: ${ciudades[0]}</p><br>`);
-document.writeln(`<p>El elemento en TERCERA posicion del array es: ${ciudades[2]}</p><br>`);
+document.writeln(`<p>El elemento en <b>*PRIMERA*</b> posicion del array es: <b>*${ciudades[0]}*</b></p><br>`);
+document.writeln(`<p>El elemento en <b>*TERCERA*</b> posicion del array es: <b>*${ciudades[2]}*</b></p><br>`);
 const ultimoElemento = ciudades[ciudades.length - 1];
-document.writeln(`<p>El elemento en ULTIMA posicion del array es: ${ultimoElemento}</p><br>`);
+document.writeln(`<p>El elemento en <b>*ULTIMA*</b> posicion del array es: <b>*${ultimoElemento}*</b></p><br>`);
 
 ciudades.push('Paris');
 ciudades[1] = 'Barcelona';
-document.writeln(`<p>El elemento en SEGUNDA posicion del array es: ${ciudades[1]}</p><br>`);
+document.writeln(`<p>El elemento en <b>*SEGUNDA*</b> posicion del array sustituido es: <b>*${ciudades[1]}*</b></p><br>`);
