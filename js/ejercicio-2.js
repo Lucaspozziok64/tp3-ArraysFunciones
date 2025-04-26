@@ -24,12 +24,20 @@ do {
     }
 } while (confirm('Desea agregar otra ciudad?'));
 
-document.writeln(`<h3>la logitud del array es: ${ciudades.length}</h3>`);
+ciudades[1] = 'Barcelona';
+ciudades.push('Paris');
+document.writeln(`<h3>El arreglo de ciudades tiene: ${ciudades.length} elementos</h3>`);
 document.writeln(`<p>El elemento en <b>*PRIMERA*</b> posicion del array es: <b>*${ciudades[0]}*</b></p><br>`);
 document.writeln(`<p>El elemento en <b>*TERCERA*</b> posicion del array es: <b>*${ciudades[2]}*</b></p><br>`);
 const ultimoElemento = ciudades[ciudades.length - 1];
 document.writeln(`<p>El elemento en <b>*ULTIMA*</b> posicion del array es: <b>*${ultimoElemento}*</b></p><br>`);
 
-ciudades.push('Paris');
-ciudades[1] = 'Barcelona';
 document.writeln(`<p>El elemento en <b>*SEGUNDA*</b> posicion del array sustituido es: <b>*${ciudades[1]}*</b></p><br>`);
+
+document.writeln(`<h3>Arreglo de Ciudades</h3>`);
+
+document.writeln(`<ul>`);
+for(let i = 0; i < ciudades.length; i++){
+    document.writeln(`<li>` + ciudades[i] + `</li>`);
+}
+document.writeln(`</ul>`);
