@@ -12,8 +12,11 @@ Output: 58
 */
 
 const ladoA = parseInt(prompt("Ingrese el lado A del rectángulo"));
-const ladoB = parseInt(prompt("Ingrese el lado A del rectángulo"));
-
+const ladoB = parseInt(prompt("Ingrese el lado B del rectángulo"));
 const perimetro = 2 * (ladoA + ladoB);
 
-document.writeln(`<h3>El perímetro del rectángulo es: ${perimetro}</h3>`);
+function calcularPerimetro(ladoA, ladoB) {
+    return "El area del perimetro es: " + perimetro;
+}
+
+document.writeln(calcularPerimetro(perimetro));
