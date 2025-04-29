@@ -3,7 +3,7 @@
 
 function tablaMultiplicar(numero) {
     for(let i = 0; i <= 10; i++) {
-        document.writeln(`<p>${numero} x ${i} = ${numero * i}<p>`)
+        document.writeln(`<p>${numero} x ${i} = ${numero * i}</p>`)
     }
 }
 
@@ -13,5 +13,5 @@ if (numero >= 1 && numero <= 10) {
     tablaMultiplicar(numero);
 }
 else {
-    document.writeln("<h3>El número ingresado no está en el rango permitido</h3>");
+    document.writeln("El número ingresado no está en el rango permitido");
 }
